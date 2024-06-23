@@ -185,3 +185,5 @@ function showDetails(category, trainerName) {
 $(document).ready(function() {
     displayTrainers('cardio'); // Показать кардио тренажеры по умолчанию
 });
+
+
