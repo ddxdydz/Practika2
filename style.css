@@ -1,0 +1,13 @@
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+#trainers-section .card {
+    transition: transform 0.3s;
+}
+
+#trainers-section .card:hover {
+    transform: translateY(-5px);
+}
+
