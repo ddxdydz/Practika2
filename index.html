@@ -1,28 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Спортивные тренажеры</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+  </head>
+  <body>
 
     <header class="jumbotron text-center">
         <div class="container">
-            <h1 class="display-4">Тренажеры для спорта!</h1>
-            <p class="lead">Выбери свой путь к идеальной форме</p>
+            <!-- Heading -->
+            <h1 class="display-3 text-center text-md-start">
+                Тренажёры  для  <span class="text-primary">спорта</span> <br>
+              </h1>
+  
+              <!-- Buttons -->
+              <div class="text-center text-md-start">
+                <a href="index.html" class="btn btn-primary-subtle lift">
+                    Главная
+                </a>
+                <a href="categories.html" class="btn btn-primary-subtle lift">
+                    Категории
+                </a>
+              </div>
         </div>
     </header>
 
-    <section class="container my-5" id="trainers-section">
-        </section>
+    <!-- Контент главной страницы под header -->
+    <div class="container content">
 
+        <p class="lead">
+            Тренажеры – это специальные устройства, предназначенные для физических упражнений и тренировок. Они позволяют укрепить мышцы, улучшить выносливость, координацию и общую физическую форму. Тренажеры могут быть различных типов и предназначены для разнообразных видов тренировок – от укрепления мышц до кардиоинтенсивных нагрузок.
+        </p>
 
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Кардиотренажеры. <span class="text-muted">С основной целью улучшения состояния сердечно-сосудистой системы и общей физической формы.</span></h2>
+            <p class="lead">
+                Эти тренажеры помогают сжигать калории, улучшают выносливость и способствуют общему укреплению организма. К примеру, беговая дорожка, элиптический тренажер, велотренажер и гребной тренажер относятся к кардиотренажерам.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="card border-light mb-3">
+                <img src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13" class="card-img" alt="card-img-corner">
+            </div>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Силовые тренажеры. <span class="text-muted">Для глубокой проработки и роста мышц, формирования рельефа тела</span></h2>
+            <p class="lead">
+                Силовые тренажеры предназначены для развития мышц и увеличения силы. Они созданы для работы с отдельными группами мышц и предлагают упражнения с грузами. Эти тренажеры помогают улучшить массу мышц, силу, выносливость и стать в целом более подтянутым. Примеры силовых тренажеров включают в себя различные машины, кроссфит, гантели и штанги.
+            </p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <div class="card border-light mb-3">
+                <img src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" class="card-img" alt="card-img-corner">
+            </div>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+    
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Функциональные тренажеры. <span class="text-muted"> Для улучшения функциональности и координации движений</span></h2>
+            <p class="lead">
+                Функциональные тренажеры предназначены для улучшения функциональности и координации движений. Они позволяют включить в тренировку не только отдельные группы мышц, но и работать с полным спектром движений. Такие тренажеры помогают развить гибкость, равновесие, стабильность и улучшить координацию тела.
+            </p>
+          </div>
+          <div class="col-md-5">
+            <div class="card border-light mb-3">
+                <img src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13" class="card-img" alt="card-img-corner">
+            </div>
+          </div>
+        </div>
+    
+        <hr class="featurette-divider">
+
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-8">
+                  <div class="card border-light mb-3">
+                      <img src="https://avatars.mds.yandex.net/get-mpic/5284155/img_id6193455735334854589.jpeg/orig" class="card-img" alt="card-img-corner">
+                  </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <p class="lead">
+            Эффективность тренировок на тренажерах зависит от правильной методики и регулярности занятий. При правильно подобранных тренировках можно добиться заментельных результатов в укреплении мышц, снижении веса, улучшении координации и гибкости. Поэтому, перед началом занятий на тренажерах, важно проконсультироваться с тренером-специалистом, который поможет разработать индивидуальную программу тренировок, а также следить за правильным проведением упражнений.
+        </p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

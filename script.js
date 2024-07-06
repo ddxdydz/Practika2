@@ -158,7 +158,7 @@ function displayTrainers(category) {
                 </div>
             </div>
         `;
-    $('#trainers-section').html(html);
+    $('#content-container').html(html);
 }
 
 function showDetails(category, trainerName) {
@@ -178,12 +178,10 @@ function showDetails(category, trainerName) {
                 </div>
             </div>
         `;
-        $('#trainers-section').html(html);
+        $('#content-container').html(html);
     }
 }
 
 $(document).ready(function() {
-    displayTrainers('cardio'); // Показать кардио тренажеры по умолчанию
+    displayTrainers("cardio");
 });
-
-
