@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Спортивные тренажеры</title>
-
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
 
     <!-- Bootstrap CSS -->
     <link
@@ -19,6 +18,9 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <header class="jumbotron text-center">
@@ -30,10 +32,14 @@
 
         <!-- Buttons -->
         <div class="text-center text-md-start">
-          <a href="index.html" class="btn btn-primary-subtle lift"> Главная </a>
-          <a href="categories.html" class="btn btn-primary-subtle lift">
-            Категории
-          </a>
+          <a href="index.html" class="btn btn-primary-subtle lift">Главная</a>
+          <a href="categories.html" class="btn btn-primary-subtle lift">Категории</a>
+          <a href="description.html" class="btn btn-primary-subtle lift">Карусель</a>
+          <a href="list.html" class="btn btn-primary-subtle lift">Список</a>
+          <a href="form.html" class="btn btn-primary-subtle lift">Анкета</a>
+          <a href="populartable.html" class="btn btn-primary-subtle lift">Таблица</a>
+          <a href="feedback.html" class="btn btn-primary-subtle lift">Отзывы</a>
+          <a href="quests.html" class="btn btn-primary-subtle lift">Вопросы</a>
         </div>
       </div>
     </header>
@@ -46,7 +52,105 @@
         выносливость, координацию и общую физическую форму. Тренажеры могут быть
         различных типов и предназначены для разнообразных видов тренировок – от
         укрепления мышц до кардиоинтенсивных нагрузок.
-      </p><br>
+      </p>
+
+      <!-- Картинка к опредлению -->
+      <br>
+      <div class="text-center">
+        <div class="container px-5">
+          <img src="img/m1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6 mx-auto">
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+              <a
+                href="#"
+                class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+              >
+                На верх
+              </a>
+              <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
+                В раздел категории
+              </a>
+          </div>
+        </div>
+      </div>
+      <p class="lead mb-4">Физическая активность является важным аспектом здорового образа жизни. Занятия на спортивных тренажёрах помогают не только поддерживать физическую форму, но и улучшать общее состояние здоровья. Однако возникает вопрос: как часто следует заниматься на тренажёрах для достижения максимального эффекта? В данном реферате мы рассмотрим рекомендации по частоте тренировок, учитывая различные цели, уровень подготовки и индивидуальные особенности.
+      </p>
+
+      <!-- Карточки с категориями -->
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom">Категории</h2>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <img src="img/categories/Кардиотренажеры.jpg" class="bi me-2"/>
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Кардио тренажёры</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/categories/Кардиотренажеры.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Ear</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>dd</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <img src="img/categories/Силовые тренажеры.jpg" class="bi me-2"/>
+                  
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Силовые тренажёры</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/categories/Силовые тренажеры.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <img src="img/categories/Силовые тренажеры.jpg" class="bi me-2" width="1em" height="1em"/>
+                  <small>Pak</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>dd</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <img src="img/categories/Функциональные тренажеры.jpg" class="bi me-2"/>
+              
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Функциональные тренажёры</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img src="img/categories/Функциональные тренажеры.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                  <small>Сав</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                  <small>dd</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
       <hr class="featurette-divider" />
 
@@ -69,7 +173,7 @@
         <div class="col-md-5">
           <div class="card border-light mb-3">
             <img
-              src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13"
+              src="img/categories/Кардиотренажеры.jpg"
               class="card-img"
               alt="card-img-corner"
             />
@@ -100,7 +204,7 @@
         <div class="col-md-5 order-md-1">
           <div class="card border-light mb-3">
             <img
-              src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg"
+              src="img/categories/Силовые тренажеры.jpg"
               class="card-img"
               alt="card-img-corner"
             />
@@ -129,7 +233,7 @@
         <div class="col-md-5">
           <div class="card border-light mb-3">
             <img
-              src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13"
+              src="img/categories/Функциональные тренажеры.jpg"
               class="card-img"
               alt="card-img-corner"
             />
@@ -138,369 +242,47 @@
       </div><br>
 
       <hr class="featurette-divider" />
-
-      <div class="container">
-        <div class="row">
-          <div class="col"></div>
-          <div class="col-8">
-            <div class="card border-light mb-3">
-              <img
-                src="https://avatars.mds.yandex.net/get-mpic/5284155/img_id6193455735334854589.jpeg/orig"
-                class="card-img"
-                alt="card-img-corner"
-              />
-            </div>
-          </div>
-          <div class="col"></div>
-        </div>
-      </div>
-      <p class="lead">
-        Эффективность тренировок на тренажерах зависит от правильной методики и
-        регулярности занятий. При правильно подобранных тренировках можно
-        добиться заментельных результатов в укреплении мышц, снижении веса,
-        улучшении координации и гибкости. Поэтому, перед началом занятий на
-        тренажерах, важно проконсультироваться с тренером-специалистом, который
-        поможет разработать индивидуальную программу тренировок, а также следить
-        за правильным проведением упражнений.
-      </p>
-    </div><br>
-
-    <div>
-      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="width: 100%;">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-          <h1 class="display-4 fw-normal">Спортивные тренажеры</h1>
-          <p class="lead fw-normal">Специальные устройства, предназначенные для физических упражнений и тренировок. Тренажеры могут быть различных типов и предназначены для разнообразных видов тренировок – от укрепления мышц до кардиоинтенсивных нагрузок</p>
-          <a class="btn btn-outline-secondary" href="categories.html">Смотреть категории</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-      </div>
-
-      <div class="text-center border-bottom">
-        <div class="container px-5">
-          <img src="https://avatars.mds.yandex.net/i?id=37a6a78323a19fc1feb5bf5a6fdb08a919c48e48-5220281-images-thumbs&n=13" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Физическая активность является важным аспектом здорового образа жизни. Занятия на спортивных тренажёрах помогают не только поддерживать физическую форму, но и улучшать общее состояние здоровья. Однако возникает вопрос: как часто следует заниматься на тренажёрах для достижения максимального эффекта? В данном реферате мы рассмотрим рекомендации по частоте тренировок, учитывая различные цели, уровень подготовки и индивидуальные особенности.
-          </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-              <a
-                href="#"
-                class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-              >
-                На верх
-              </a>
-              <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
-                В раздел категории
-              </a>
-          </div>
-        </div>
-        <div class="overflow-hidden" style="max-height: 30vh;">
-        </div>
-      </div>
-
-      <div class="text-center text-md-start">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                  <h2 class="display-5">Скамья для жима</h2>
-                  <p class="lead">Базовый тренажер для тренировки мышц груди, трицепсов и плеч</p>
-                </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=245ddda4abee6793b6c10b6fc618c0d7aa2161b6-8750921-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                  <h2 class="display-5">Велотренажер</h2>
-                  <p class="lead">Для имитации езды на велосипеде и кардиотренировок</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://tehnoteca.ru/img/311/310018/kettler_topas_1.jpg"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br>
-
-      <div class="text-center text-md-start"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                  <h2 class="display-5">Бодибар</h2>
-                  <p class="lead">Для силовых и функциональных тренировок с различными уровнями нагрузки</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=e662fd2ef8e2006033b325d5af607f47a7cb292c-4958261-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                  <h2 class="display-5">Тренажер Смита</h2>
-                  <p class="lead">Многофункциональный тренажер для безопасных силовых тренировок</p>
-                </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=63d518cce1603829bdfca880c5d0136ea73e420f-12543315-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <br>
-    
-      <div class="text-center text-md-start"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                  <h2 class="display-5">Эллиптический тренажер</h2>
-                  <p class="lead">Для кардиотренировок с минимальной нагрузкой на суставы</p>
-                </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=9d85d6d4f498bd3e55e01b32396b82816459192f-10148308-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                  <h2 class="display-5">Фитбол</h2>
-                  <p class="lead">Универсальный тренажер для тренировки мышц кора, улучшения баланса и координации</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=a238d98edec9c80371388b6173f7086c740a0116-8564743-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <br>
-
-        <div class="text-center text-md-start">
-          <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-                <div class="my-3 py-3">
-                  <h2 class="display-5">Гантели</h2>
-                  <p class="lead">Универсальный тренажер для тренировки мышц рук, плеч и груди</p>
-                </div>
-                <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://avatars.mds.yandex.net/i?id=2a00000179f5b7e50b3680a4975b67b9a1ea-3947589-images-thumbs&n=13"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-                <div class="my-3 p-3">
-                  <h2 class="display-5">Беговая дорожка</h2>
-                  <p class="lead">Для эффективных кардиотренировок и сжигания калорий</p>
-                </div>
-                <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
-                  <br>
-                  <img
-                src="https://img.hasttings.ru/site-104803/upload/shop_1/7/8/5/item_785/shop_property_file_785_2017.png"
-                class="card-img"
-                alt="card-img-corner"
-              />
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <br>
-    
     </div>
 
-    <!-- FORMA -->
-    <div class="container">
-      <div class="row">
-    <div class="container my-5"></div>
+    <div class="container my-5" class="huge-card">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col p-3 p-lg-5 pt-lg-3">
-              <div class="col">
-                <div class="FORMA">
-                  <h2 class="text-center">Какие у вас любимые тренажёры?</h2>
-                  <form>
-                      <div class="form-group">
-                          <label for="name">Ваше имя</label>
-                          <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
-                      </div>
-            
-                      <div class="form-group">
-                          <label for="email">Ваш email</label>
-                          <input type="email" class="form-control" id="email" placeholder="Введите ваш email" required>
-                      </div>
-            
-                      <div class="form-group">
-                          <label for="favoriteEquipment">Ваши любимые тренажёры</label>
-                          <textarea class="form-control" id="favoriteEquipment" rows="5" placeholder="Опишите ваши любимые тренажёры..." required></textarea>
-                      </div>
-            
-                      <div class="form-group">
-                          <label for="frequency">Как часто вы занимаетесь на тренажёрах?</label>
-                          <select class="form-control" id="frequency" required>
-                              <option value="">Выберите вариант...</option>
-                              <option value="ежедневно">Ежедневно</option>
-                              <option value="несколько раз в неделю">Несколько раз в неделю</option>
-                              <option value="раз в неделю">Раз в неделю</option>
-                              <option value="реже">Реже</option>
-                          </select>
-                      </div>
-            
-                      <div class="form-group">
-                          <label for="goals">Какие цели вы преследуете, занимаясь на тренажёрах?</label>
-                          <textarea class="form-control" id="goals" rows="3" placeholder="Опишите ваши цели..." required></textarea>
-                      </div>
-            
-                      <div class="form-group">
-                          <label for="comments">Дополнительные комментарии</label>
-                          <textarea class="form-control" id="comments" rows="3" placeholder="Ваши комментарии..."></textarea>
-                      </div>
-            
-                      <button type="submit" class="btn btn-primary">Отправить</button>
-                  </form>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div></div></div>
-    <br><br><br><br>
-
-    <div id="myCarousel" class="carousel slide pointer-event" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="30%" style="aspect-ratio: 4 / 1;" src="https://avatars.mds.yandex.net/i?id=083c540a3b249df8e578338feb3c541433f24450-8219563-images-thumbs&n=13" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-  
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Кардиотренажеры</h1>
-              <p>Эти тренажеры помогают сжигать калории, улучшают выносливость и способствуют общему укреплению организма.</p>
-              <p><a class="btn btn-lg btn-primary" href="categories.html#cardio">Кардиотренажеры</a></p>
-            </div>
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h1 class="display-4 fw-bold lh-1">Эффективность</h1>
+          <p class="lead">Эффективность тренировок на тренажерах зависит от правильной методики и регулярности занятий. При правильно подобранных тренировках можно добиться заментельных результатов в укреплении мышц, снижении веса, улучшении координации и гибкости. Поэтому, перед началом занятий на тренажерах, важно проконсультироваться с тренером-специалистом, который поможет разработать индивидуальную программу тренировок, а также следить за правильным проведением упражнений.</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+            <a
+              href="#"
+              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
+            >
+              На верх
+            </a>
+            <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
+              В раздел категории
+            </a>
           </div>
         </div>
-        <div class="carousel-item">
-          <img class="bd-placeholder-img" width="100%" height="30%" style="aspect-ratio: 4 / 1;" src="https://avatars.mds.yandex.net/i?id=5ad7fdc6e3666783955914fe4d5ef973-4017487-images-thumbs&n=13" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-  
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Силовые тренажеры</h1>
-              <p>Они созданы для работы с отдельными группами мышц и предлагают упражнения с грузами</p>
-              <p><a class="btn btn-lg btn-primary" href="categories.html#strength">Силовые тренажеры</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item active">
-          <img class="bd-placeholder-img" width="100%" height="30%" style="aspect-ratio: 4 / 1;" src="https://avatars.mds.yandex.net/i?id=58006edb7f267f80d8ac8fe0337e5ffa-5514672-images-thumbs&n=13" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-  
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>Функциональные тренажеры</h1>
-              <p>Они позволяют включить в тренировку не только отдельные группы мышц, но и работать с полным спектром движений</p>
-              <p><a class="btn btn-lg btn-primary" href="categories.html#functional">Функциональные тренажеры</a></p>
-            </div>
-          </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-3" src="img/m2.jpg" alt="" width="720">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <div class="container marketing">
-      <br>
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-  
-          <h2>Кардиотренажеры</h2>
-          <p> основной целью улучшения состояния сердечно-сосудистой системы и общей физической формы</p>
-          <p><a class="btn btn-secondary" href="categories.html#cardio">Подробнее »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-          <h2>Силовые тренажеры</h2>
-          <p>Для глубокой проработки и роста мышц, формирования рельефа тела</p>
-          <p><a class="btn btn-secondary" href="categories.html#strength">Подробнее »</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"/>
-          <h2>Функциональные тренажеры</h2>
-          <p>Для улучшения функциональности и координации движений</p>
-          <p><a class="btn btn-secondary" href="categories.html#functional">Подробнее »</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="width: 100%;">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 fw-normal">Спортивные тренажеры</h1>
+        <p class="lead fw-normal">Специальные устройства, предназначенные для физических упражнений и тренировок. Тренажеры могут быть различных типов и предназначены для разнообразных видов тренировок – от укрепления мышц до кардиоинтенсивных нагрузок</p>
+        <a class="btn btn-outline-secondary" href="categories.html">Смотреть категории</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
+  
+    <br>
 
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="https://avatars.mds.yandex.net/i?id=4dd50112ad0eb50ade0b3f231e29733343cdc2d4-12260990-images-thumbs&n=13" alt="" width="720">
+          <img class="rounded-lg-3" src="img/m3.jpg" alt="" width="720">
       </div>
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
           <h1 class="display-4 fw-bold lh-1">Категории</h1>
@@ -524,8 +306,8 @@
     <div class="container my-5">
       <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
         <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Тренажёры</h1>
-          <p class="lead">Существует множество типов тренажеров, каждый из которых предназначен для различных целей тренировки. Каждый тип тренажера имеет свои особенности и преимущества, поэтому выбор зависит от ваших целей и предпочтений. Если вас интересует что-то конкретное, дайте знать! Каждый тип тренажера имеет свои особенности и преимущества, поэтому выбор зависит от ваших целей и предпочтений. Если вас интересует что-то конкретное, дайте знать!</p>
+          <h1 class="display-4 fw-bold lh-1">Спорт</h1>
+          <p class="lead">Согласно рекомендациям Всемирной организации здравоохранения (ВОЗ), взрослым следует заниматься физической активностью не менее 150 минут в неделю. Это может включать как аэробные упражнения, так и силовые тренировки. Частота занятий может варьироваться в зависимости от целей: - Для поддержания общего здоровья: рекомендуется заниматься 3-5 раз в неделю. Это может быть кардионагрузка (бег, плавание, занятия на эллиптическом тренажёре) в сочетании с силовыми тренировками. - Для снижения веса: необходимо увеличить количество тренировок до 5-6 раз в неделю, комбинируя кардионагрузки и силовые тренировки.</p>
           <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
             <a
               href="#"
@@ -539,468 +321,12 @@
           </div>
         </div>
         <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="https://avatars.mds.yandex.net/i?id=770e8abea92b607cf4c3e9653b6870982f1a577a-9232652-images-thumbs&n=13" alt="" width="720">
+            <img class="rounded-lg-3" src="img/m4.jpg" alt="" width="720">
         </div>
-      </div>
-    </div>
-
-    <div class="container px-4 py-5" id="custom-cards">
-      <h2 class="pb-2 border-bottom">Категории</h2>
-  
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <img src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13" class="bi me-2"/>
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Кардио тренажёры</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>Ear</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>dd</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-              <img src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" class="bi me-2"/>
-                  
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Силовые тренажёры</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <img src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" class="bi me-2" width="1em" height="1em"/>
-                  <small>Pak</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>dd</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col">
-          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
-            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-              <img src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13" class="bi me-2"/>
-              
-              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Функциональные тренажёры</h2>
-              <ul class="d-flex list-unstyled mt-auto">
-                <li class="me-auto">
-                  <img src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-                </li>
-                <li class="d-flex align-items-center me-3">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                  <small>Сав</small>
-                </li>
-                <li class="d-flex align-items-center">
-                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                  <small>dd</small>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-            <!-- Таблица -->
-  <h2 class="my-4">Список Тренажеров</h2>
-  <table class="table">
-      <thead>
-          <tr>
-              <th>Название</th>
-              <th>Тип</th>
-              <th>Количество использований</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>Беговая дорожка</td>
-              <td>Кардио</td>
-              <td>120</td>
-          </tr>
-          <tr>
-              <td>Эллиптический тренажер</td>
-              <td>Кардио</td>
-              <td>85</td>
-          </tr>
-          <tr>
-              <td>Силовой тренажер</td>
-              <td>Сила</td>
-              <td>70</td>
-          </tr>
-      </tbody>
-  </table>
-
-            <!-- Плитка -->
-    <div class="row my-4">
-      <div class="col-md-4">
-          <div class="card">
-              <img src="https://img.hasttings.ru/site-104803/upload/shop_1/7/8/5/item_785/shop_property_file_785_2017.png" class="card-img-top" alt="Тренажер 1">
-              <div class="card-body">
-                  <h5 class="card-title">Беговая дорожка</h5>
-                  <p class="card-text">Отлично подходит для кардионагрузки.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-          <div class="card">
-              <img src="https://avatars.mds.yandex.net/i?id=9d85d6d4f498bd3e55e01b32396b82816459192f-10148308-images-thumbs&n=13" class="card-img-top" alt="Тренажер 2">
-              <div class="card-body">
-                  <h5 class="card-title">Эллиптический тренажер</h5>
-                  <p class="card-text">Идеален для низкоударных тренировок.</p>
-              </div>
-          </div>
-      </div>
-      <div class="col-md-4">
-          <div class="card">
-              <img src="https://avatars.mds.yandex.net/i?id=63d518cce1603829bdfca880c5d0136ea73e420f-12543315-images-thumbs&n=13" class="card-img-top" alt="Тренажер 3">
-              <div class="card-body">
-                  <h5 class="card-title">Силовой тренажер</h5>
-                  <p class="card-text">Для тренировки всех групп мышц.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-
-  
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5">
-      <h2 class="text-center">Самые популярные тренажёры</h2>
-      <table class="table table-striped table-bordered mt-4">
-          <thead>
-              <tr>
-                  <th>#</th>
-                  <th>Название тренажёра</th>
-                  <th>Тип</th>
-                  <th>Основные мышцы</th>
-                  <th>Преимущества</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>1</td>
-                  <td>Беговая дорожка</td>
-                  <td>Кардио</td>
-                  <td>Ноги, ягодицы</td>
-                  <td>Улучшает сердечно-сосудистую систему, сжигает калории.</td>
-              </tr>
-              <tr>
-                  <td>2</td>
-                  <td>Эллиптический тренажёр</td>
-                  <td>Кардио</td>
-                  <td>Ноги, ягодицы, руки</td>
-                  <td>Мягкая нагрузка на суставы, комплексная тренировка.</td>
-              </tr>
-              <tr>
-                  <td>3</td>
-                  <td>Силовая рама (Smith Machine)</td>
-                  <td>Силовой</td>
-                  <td>Все группы мышц</td>
-                  <td>Безопасность при выполнении упражнений, возможность тренировки без партнёра.</td>
-              </tr>
-              <tr>
-                  <td>4</td>
-                  <td>Гребной тренажёр</td>
-                  <td>Кардио/Силовой</td>
-                  <td>Спина, ноги, руки</td>
-                  <td>Комплексная тренировка, развивает выносливость.</td>
-              </tr>
-              <tr>
-                  <td>5</td>
-                  <td>Тренажёр для пресса</td>
-                  <td>Силовой</td>
-                  <td>Пресс</td>
-                  <td>Изолированная работа на мышцы живота.</td>
-              </tr>
-              <tr>
-                  <td>6</td>
-                  <td>Становая тяга (Deadlift)</td>
-                  <td>Силовой</td>
-                  <td>Ноги, спина, ягодицы</td>
-                  <td>Увеличивает силу и массу мышц всего тела.</td>
-              </tr>
-              <tr>
-                  <td>7</td>
-                  <td>Брусья</td>
-                  <td>Силовой</td>
-                  <td>Грудь, трицепсы, плечи</td>
-                  <td>Развивает верхнюю часть тела, улучшает силу.</td>
-              </tr>
-              <tr>
-                  <td>8</td>
-                  <td>Тренажёр для ног (Leg Press)</td>
-                  <td>Силовой</td>
-                  <td>Ноги, ягодицы</td>
-                  <td>Удобный способ тренировки ног без нагрузки на спину.</td>
-              </tr>
-              <tr>
-                  <td>9</td>
-                  <td>Жим штанги лежа</td>
-                  <td>Силовой</td>
-                  <td>Грудь, плечи, трицепсы</td>
-                  <td>Эффективная тренировка верхней части тела.</td>
-              </tr>
-              <tr>
-                  <td>10</td>
-                  <td>Тренажёр для спины (Lat Pulldown)</td>
-                  <td>Силовой</td>
-                  <td>Спина, бицепсы</td>
-                  <td>Укрепляет верхнюю часть спины, улучшает осанку.</td>
-              </tr>
-              <tr>
-                  <td>11</td>
-                  <td>Гантели</td>
-                  <td>Силовой</td>
-                  <td>Все группы мышц</td>
-                  <td>Разнообразие упражнений, доступность.</td>
-              </tr>
-              <tr>
-                  <td>12</td><td>Тренажёр для икр (Calf Raise)</td>
-                  <td>Силовой</td>
-                  <td>Икры</td>
-                  <td>Изолированная работа на икроножные мышцы.</td>
-              </tr>
-              <tr>
-                  <td>13</td>
-                  <td>Тренажёр для груди (Chest Press)</td>
-                  <td>Силовой</td>
-                  <td>Грудь, плечи, трицепсы</td>
-                  <td>Удобство и безопасность при тренировке груди.</td>
-              </tr>
-              <tr>
-                  <td>14</td>
-                  <td>Кросс-тренажёр (Cross Trainer)</td>
-                  <td>Кардио/Силовой</td>
-                  <td>Ноги, ягодицы, руки</td>
-                  <td>Общая тренировка всего тела, низкая нагрузка на суставы.</td>
-              </tr>
-              <tr>
-                  <td>15</td>
-                  <td>Прыжковая скакалка</td>
-                  <td>Кардио</td>
-                  <td>Ноги, пресс, сердечно-сосудистая система</td>
-                  <td>Улучшает координацию и выносливость.</td>
-              </tr>
-              <tr>
-                  <td>16</td>
-                  <td>Фитнес-резинки</td>
-                  <td>Силовой/Функциональный</td>
-                  <td>Все группы мышц</td>
-                  <td>Компактность и универсальность в тренировках.</td>
-              </tr>
-
-          </tbody>
-      </table>
-  </div>
-  <br><br><br><br>
-
-    <div class="container my-5">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Кардиотренажеры</h1>
-          <p class="lead">С основной целью улучшения состояния сердечно-сосудистой системы и общей физической формы.
-            Эти тренажеры помогают сжигать калории, улучшают выносливость и способствуют общему укреплению организма. К примеру, беговая дорожка, элиптический тренажер, велотренажер и гребной тренажер относятся к кардиотренажерам.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <a
-              href="#"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              На верх
-            </a>
-            <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
-              В раздел категории
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="https://avatars.mds.yandex.net/i?id=9a327dccb774de3862d5bf6a8c1b5f168aa1c276-12413751-images-thumbs&n=13" alt="" width="720">
-        </div>
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-          <img class="rounded-lg-3" src="https://img.razrisyika.ru/kart/133/528733-trenazher-38.jpg" alt="" width="720">
-      </div>
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Силовые тренажеры</h1>
-          <p class="lead">Для глубокой проработки и роста мышц, формирования рельефа тела
-            Силовые тренажеры предназначены для развития мышц и увеличения силы. Они созданы для работы с отдельными группами мышц и предлагают упражнения с грузами. Эти тренажеры помогают улучшить массу мышц, силу, выносливость и стать в целом более подтянутым. Примеры силовых тренажеров включают в себя различные машины, кроссфит, гантели и штанги.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <a
-              href="#"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              На верх
-            </a>
-            <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
-              В раздел категории
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container my-5">
-      <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h1 class="display-4 fw-bold lh-1">Функциональные тренажеры</h1>
-          <p class="lead">Для улучшения функциональности и координации движений
-            Функциональные тренажеры предназначены для улучшения функциональности и координации движений. Они позволяют включить в тренировку не только отдельные группы мышц, но и работать с полным спектром движений. Такие тренажеры помогают развить гибкость, равновесие, стабильность и улучшить координацию тела.</p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-            <a
-              href="#"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              На верх
-            </a>
-            <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
-              В раздел категории
-            </a>
-          </div>
-        </div>
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-            <img class="rounded-lg-3" src="https://avatars.mds.yandex.net/i?id=8cd5ad3b3fd0863ab0aef1cc8c7326e19e975321-12460761-images-thumbs&n=13" alt="" width="720">
-        </div>
-      </div>
-    </div>
-
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-      
-      <h1 class="display-4 fw-bold">Как часто нужно заниматься на спортивных тренажёрах</h1>
-      <div class="container px-5">
-        <img src="https://avatars.mds.yandex.net/i?id=37a6a78323a19fc1feb5bf5a6fdb08a919c48e48-5220281-images-thumbs&n=13" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
-      </div>
-      <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">Согласно рекомендациям Всемирной организации здравоохранения (ВОЗ), взрослым следует заниматься физической активностью не менее 150 минут в неделю. Это может включать как аэробные упражнения, так и силовые тренировки. Частота занятий может варьироваться в зависимости от целей:
-
-          - Для поддержания общего здоровья: рекомендуется заниматься 3-5 раз в неделю. Это может быть кардионагрузка (бег, плавание, занятия на эллиптическом тренажёре) в сочетании с силовыми тренировками.
-          
-          - Для снижения веса: необходимо увеличить количество тренировок до 5-6 раз в неделю, комбинируя кардионагрузки и силовые тренировки. Важно учитывать, что для достижения видимых результатов необходимы как физические нагрузки, так и правильное питание.
-          
-          - Для наращивания мышечной массы: оптимальная частота тренировок составляет 3-4 раза в неделю. В этом случае акцент следует делать на силовые тренировки, обеспечивая достаточное время для восстановления мышц между занятиями.</p>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <a
-              href="#"
-              class="btn btn-primary btn-lg px-4 me-md-2 fw-bold"
-            >
-              На верх
-            </a>
-            <a href="categories.html" class="btn btn-outline-secondary btn-lg px-4">
-              В раздел категории
-            </a>
-        </div>
-      </div>
-      <div class="overflow-hidden" style="max-height: 30vh;">
       </div>
     </div>
 
     <br>
-
-    <div class="container mt-5">
-      <h1 class="text-center">Отзывы</h1>
-      <br>
-      <div class="row">
-          <div class="col-md-6">
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Алексей, 32 года</h5>
-                      <p class="card-text">Я начал заниматься на тренажерах несколько месяцев назад, и это изменило мою жизнь. Сначала я был скептически настроен, но после первой тренировки понял, что это именно то, что мне нужно. Тренажеры позволяют мне прорабатывать все группы мышц, и я заметил значительное улучшение в своей физической форме. Каждый раз, когда я прихожу в зал, чувствую прилив энергии и мотивации. Я рекомендую всем попробовать занятия на тренажерах — это не только полезно, но и очень увлекательно!</p>
-                  </div>
-              </div>
-
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Мария, 28 лет</h5>
-                      <p class="card-text">Как человек, который всегда боролся с лишним весом, я нашла свое спасение в тренажерах. С помощью разнообразных устройств в спортзале я смогла не только сбросить вес, но и укрепить мышцы. Я особенно люблю занятия на эллиптическом тренажере — это помогает мне поддерживать сердечно-сосудистую систему в отличной форме. Я заметила, что мои тренировки стали более эффективными, когда я начала комбинировать кардио с силовыми упражнениями. Если вы ищете способ изменить свою жизнь, тренажеры — это отличный выбор!</p>
-                  </div>
-              </div>
-
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Игорь, 45 лет</h5>
-                      <p class="card-text">Я начал заниматься на тренажерах после того, как врачи посоветовали мне улучшить физическую активность для поддержания здоровья. Сначала было тяжело, но со временем я привык и даже стал получать удовольствие от тренировок. Я использую разные тренажеры для проработки различных групп мышц и чувствую, как мое тело становится сильнее. Кроме того, занятия на тренажерах помогают мне справляться со стрессом и улучшают общее самочувствие. Я настоятельно рекомендую всем попробовать этот подход к тренировкам!</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-md-6">
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Наталья, 37 лет</h5>
-                      <p class="card-text">Тренажеры стали для меня настоящим открытием! Я всегда думала, что спортзал — это скучно и утомительно. Но когда я пришла в зал и увидела разнообразие тренажеров, мое мнение изменилось. Я люблю пробовать новые устройства и комбинировать различные упражнения. Особенно меня вдохновляет возможность отслеживать свой прогресс — это действительно мотивирует. Я стала более уверенной в себе и заметила улучшение в своем состоянии. Тренажеры — это не просто способ поддерживать форму, это возможность стать лучше!</p>
-                  </div>
-              </div>
-
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Дмитрий, 29 лет</h5>
-                      <p class="card-text">Как спортсмен-любитель, я всегда искал способы улучшить свои результаты. Тренажеры стали отличным дополнением к моим тренировкам. Я использую их для повышения выносливости и силы. Особенно мне нравятся силовые тренажеры — они позволяют мне прорабатывать каждую мышечную группу с максимальной эффективностью. Я также заметил, что занятия на тренажерах помогают мне быстрее восстанавливаться после интенсивных тренировок. Если вы серьезно относитесь к спорту, обязательно включите тренажеры в свою программу!</p>
-                  </div>
-              </div>
-
-              <div class="card mb-4">
-                  <div class="card-body">
-                      <h5 class="card-title">Ольга, 24 года</h5>
-                      <p class="card-text">Я долго искала способ поддерживать форму после университета и наконец нашла его в тренажерах...</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-
-    <br><br><br><br>
-    <h1 class="text-center">Появились вопросы?</h1>
-    <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-      
-      <div class="row align-items-center g-lg-5 py-5">
-        
-        <div class="col-lg-7 text-center text-lg-start">
-          <p class="col-lg-10 fs-4">Задавать вопрос о спортивных тренажерах можно по нескольким причинам:
-  Выбор оборудования: Если вы планируете купить тренажер, важно узнать, какие модели лучше подходят для ваших целей.  Эффективность: Узнать, какие тренажеры наиболее эффективны для достижения определенных результатов, например, для похудения или набора мышечной массы.  Безопасность: Понять, как правильно использовать тренажеры, чтобы избежать травм. Разнообразие тренировок: Получить идеи о том, как разнообразить свои тренировки с помощью.</p>
-        </div>
-        <div class="col-md-10 mx-auto col-lg-5">
-          <form class="p-4 p-md-5 border rounded-3 bg-light">
-            <div class="form-floating mb-3">
-              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-              <label for="floatingInput">Вопрос</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-              <label for="floatingPassword">Электронная почта для ответа</label>
-            </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">Отправить</button>
-            <hr class="my-4">
-            <small class="text-muted">Задать вопрос</small>
-          </form>
-        </div>
-      </div>
-    </div>
-
-    <br><br>
 
     <!-- Чёрный блок -->
     <div class="bg-dark text-secondary px-4 py-5 text-center">

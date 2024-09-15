@@ -3,10 +3,54 @@
     object-fit: cover;
 }
 
-#trainers-section .card {
+.card {
     transition: transform 0.3s;
 }
 
-#trainers-section .card:hover {
+.card:hover {
     transform: translateY(-5px);
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
+.container {
+    transform: translateY(-5px);
+}
+
+img {
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: translateY(-5px);
+}
+
+.huge-card {
+    transition: transform 0.3s;
+}
+
+.huge-card:hover {
+    transform: translateY(-5px);
+}
+
+* {
+    transition: transform 0.3s;
+}
+
+*:hover {
+    transform: translateY(-5px);
+}
+
+header:hover {
+    transform: translateY(0px);
+}
+
+h1:hover {
+    transform: translateY(0px);
+}
+
+h2:hover {
+    transform: translateY(0px);
 }

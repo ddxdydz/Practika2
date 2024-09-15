@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Анкета</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header class="jumbotron text-center">
+      <div class="container">
+        <!-- Heading -->
+        <h1 class="display-3 text-center text-md-start">
+          Тренажёры для <span class="text-primary">спорта</span> <br />
+        </h1>
+
+        <!-- Buttons -->
+        <div class="text-center text-md-start">
+            <a href="index.html" class="btn btn-primary-subtle lift">Главная</a>
+            <a href="categories.html" class="btn btn-primary-subtle lift">Категории</a>
+            <a href="description.html" class="btn btn-primary-subtle lift">Карусель</a>
+            <a href="list.html" class="btn btn-primary-subtle lift">Список</a>
+            <a href="form.html" class="btn btn-primary-subtle lift">Анкета</a>
+            <a href="populartable.html" class="btn btn-primary-subtle lift">Таблица</a>
+            <a href="feedback.html" class="btn btn-primary-subtle lift">Отзывы</a>
+            <a href="quests.html" class="btn btn-primary-subtle lift">Вопросы</a>
+          </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- Таблица -->
+          <h2 class="my-4">Список популярных тренажеров</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Название</th>
+                <th>Тип</th>
+                <th>Количество голосов</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Беговая дорожка</td>
+                <td>Кардио</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Эллиптический тренажер</td>
+                <td>Кардио</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td>Штанга</td>
+                <td>Сила</td>
+                <td>70</td>
+              </tr>
+              <tr>
+                <td>Гири</td>
+                <td>Сила</td>
+                <td>56</td>
+              </tr>
+              <tr>
+                <td>Фитбол</td>
+                <td>Функциональные</td>
+                <td>47</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- Плитка -->
+          <h2 class="my-4">Топ-3 из таблицы:</h2>
+          <div class="row my-4">
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="img/equipment/kardio/Беговая дорожка.jpg"
+                  class="card-img-top"
+                  alt="Тренажер 1"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">1 - Беговая дорожка</h5>
+                  <p class="card-text">Отлично подходит для кардионагрузки.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="img/equipment/kardio/Эллиптический тренажер.jpg"
+                  class="card-img-top"
+                  alt="Тренажер 2"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">2 - Эллиптический тренажер</h5>
+                  <p class="card-text">Идеален для низкоударных тренировок.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <img
+                  src="img/equipment/force/Штанга.jpg"
+                  class="card-img-top"
+                  alt="Тренажер 3"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">3 - Штанга</h5>
+                  <p class="card-text">Для тренировки всех групп мышц.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FORMA -->
+    <div class="container">
+      <div class="row">
+        <div class="container my-5"></div>
+        <div
+          class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+        >
+          <div class="col p-3 p-lg-5 pt-lg-3">
+            <div class="col">
+              <div class="FORMA">
+                <h2 class="text-center">Какие у вас любимые тренажёры?</h2>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Введите ваше имя"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="email">Ваш email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Введите ваш email"
+                      required
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="favoriteEquipment"
+                      >Ваши любимые тренажёры</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="favoriteEquipment"
+                      rows="5"
+                      placeholder="Опишите ваши любимые тренажёры..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="frequency"
+                      >Как часто вы занимаетесь на тренажёрах?</label
+                    >
+                    <select class="form-control" id="frequency" required>
+                      <option value="">Выберите вариант...</option>
+                      <option value="ежедневно">Ежедневно</option>
+                      <option value="несколько раз в неделю">
+                        Несколько раз в неделю
+                      </option>
+                      <option value="раз в неделю">Раз в неделю</option>
+                      <option value="реже">Реже</option>
+                    </select>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="goals"
+                      >Какие цели вы преследуете, занимаясь на
+                      тренажёрах?</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="goals"
+                      rows="3"
+                      placeholder="Опишите ваши цели..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="comments">Дополнительные комментарии</label>
+                    <textarea
+                      class="form-control"
+                      id="comments"
+                      rows="3"
+                      placeholder="Ваши комментарии..."
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">
+                    Отправить
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br />
+
+    <!-- Чёрный блок -->
+    <div class="bg-dark text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">
+          Эффективный способ улучшить здоровье
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">
+            Спортивные тренажёры — это эффективный способ улучшить здоровье и
+            физическую форму. Кардио, силовые и функциональные тренажёры могут
+            быть адаптированы под любые уровни физической подготовки и цели.
+            Всегда помните о разминке и заминке, и не стесняйтесь обращаться за
+            помощью к профессиональным тренерам в фитнес-залах для улучшения
+            результатов и предотвращения травм. Регулярные тренировки помогут не
+            только улучшить физическую форму, но и общее состояние здоровья.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <a
+              href="index.html"
+              class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+            >
+              На главную
+            </a>
+            <a href="categories.html" class="btn btn-outline-light btn-lg px-4">
+              В раздел категории
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  </body>
+</html>
