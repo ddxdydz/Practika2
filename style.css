@@ -35,14 +35,6 @@ img:hover {
     transform: translateY(-5px);
 }
 
-* {
-    transition: transform 0.3s;
-}
-
-*:hover {
-    transform: translateY(-5px);
-}
-
 header:hover {
     transform: translateY(0px);
 }
