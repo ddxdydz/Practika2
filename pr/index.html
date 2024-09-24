@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Legends</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    .character-info {
+        display: none;
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center mt-5">Welcome to Apex Legends</h1>
+    
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <img src="storm.png" alt="Storm" class="img-fluid">
+            <h3 class="text-center">Штурм</h3>
+            <a href="storm.html" class="btn btn-primary">Подробнее</a>
+            <div class="character-info">
+                <p>Получает скрытые предметы и ценные модификации в красных контейнерах с оружием. Может нести дополнительные припасы в каждой ячейке рюкзака.</p>
+                <ul>
+                    <li><a href="character.html">Эш - Злобный провокатор</a></li>
+                    <li><a href="character.html">Фьюз - Бомбический эксперт по взрывчатке</a></li>
+                    <li><a href="character.html">Безумная Мэгги - Бунтарка-воевода</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="col-md-4">  
+    <img src="defender.png" alt="Defender" class="img-fluid">  
+    <h3 class="text-center">Защитник</h3>  
+    <a href="defender.html" class="btn btn-primary">Подробнее</a>  
+    <div class="character-info">  
+        <p>Создает барьер из панели, которая защищает от вражеского огня. Может восстанавливать укрытие и лечить союзников.</p>  
+        <ul>  
+            <li><a href="#">Гибралтар - Неукротимый защитник</a></li>  
+            <li><a href="#">Ваттсон - Статический защитник</a></li>  
+            <li><a href="#">Рампарт - Неудержимая пушечница</a></li>  
+        </ul>  
+    </div>  
+</div>  
+	
+
+        <div class="col-md-4">  
+    <img src="support.png" alt="Support" class="img-fluid">  
+    <h3 class="text-center">Поддержка</h3>  
+    <a href="support.html" class="btn btn-primary">Подробнее</a>  
+    <div class="character-info">  
+        <p>Обеспечивает поддержку команде с помощью лечения, возрождения и обнаружения врагов. Может создавать порталы для быстрой перемены позиции.</p>  
+        <ul>  
+            <li><a href="#">Лайфлайн - Полевой медик</a></li>  
+            <li><a href="#">Крипто - Неуловимый хакер</a></li>  
+            <li><a href="#">Мираж - Голографический трюкач</a></li>  
+        </ul>  
+    </div>  
+</div>  
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.toggle-info').click(function() {
+            $(this).siblings('.character-info').slideToggle();
+        });
+    });
+</script>
+</body>
+</html>
